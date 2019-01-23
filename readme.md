@@ -9,6 +9,8 @@ https://nodesource.com/blog/8-protips-to-start-killing-it-when-dockerizing-node-
 0. Setup the PI
     - git is already installed on PI.
     https://projects.raspberrypi.org/en/projects/getting-started-with-git
+    - get the project
+    https://github.com/undrewb/node-intro.git
     - install vscode
     https://pimylifeup.com/raspberry-pi-visual-studio-code/
     - install node
