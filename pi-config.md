@@ -17,5 +17,8 @@ Clone git repo
     cd node-intro
     
 Install npm
+    -   download
+    -   extract
+    
 Install docker
 

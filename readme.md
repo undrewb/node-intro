@@ -15,6 +15,7 @@ https://nodesource.com/blog/8-protips-to-start-killing-it-when-dockerizing-node-
     https://pimylifeup.com/raspberry-pi-visual-studio-code/
     - install node
     https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
+    and https://askubuntu.com/questions/92328/how-do-i-uncompress-a-tarball-that-uses-xz for how to extract xz files. Use tar -xf Im not sure why tar doesnt support tab autocomplete.
     - install docker https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
     
 1. create node app
