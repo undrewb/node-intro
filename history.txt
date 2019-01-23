@@ -68,4 +68,28 @@
    69  ls
    70  cd node-intro/
    71  history
+   72  git config --global user.email andrew.bucknell@gmail.com
+   73  git config --global user.name "Andrew Bucknell"
+   74  curl -sSL https://get.docker.com | sh
+   75  sudo usermod -aG docker pi
+   76  history
+   77  docker images
+   78  docker build -t undrewb/node-intro
+   79  docker build -t undrewb/node-intro .
+   80  sudo systemctl enable docker
+   81  sudo systemctl start docker
+   82  docker images
+   83  docker build -t undrewb/node-intro .
+reboot
+   85  cd projects/
+   86  ls
+   87  cd node-intro/
+   88  ls
+   89  docker build -t undrewb/node-intro .
+   90  docker images
+   91  docker start undrewb/node-intro
+   92  docker run -p 49160:8080 -d undrewb/node-intro
+   93  docker ps
+   94  history
+
 pi@raspberrypi:~/projects
