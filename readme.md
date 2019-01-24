@@ -24,9 +24,9 @@
 
 2. Create docker image
     - create and populate Dockerfile
-    - create and populate .dockerignore
+    -  create and populate .dockerignore
     - build docker image
-        docker build -t undrewb/node-intro .
+            docker build -t undrewb/node-intro .
     - review docker images in local repository
         docker images
         docker ps
