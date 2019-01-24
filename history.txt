@@ -83,7 +83,6 @@
 reboot
    85  cd projects/
    86  ls
-   87  cd node-intro/
    88  ls
    89  docker build -t undrewb/node-intro .
    90  docker images
@@ -91,5 +90,36 @@ reboot
    92  docker run -p 49160:8080 -d undrewb/node-intro
    93  docker ps
    94  history
+
+
+   95  git push origin master
+   96  docker build -t undrewb/node-intro .
+   97  cd projects/
+   98  cd node-intro/
+   99  docker build -t undrewb/node-intro .
+  100  docker images
+  101  docker run -p 49160:8080 -d undrewb/node-intro
+  102  shuwdor restart now
+  103  shutdown restart now
+  104  shutdown -r now
+  105  cd projects/
+  106  ls
+  107  cd node-intro/
+  108  git pull
+  109  ls
+  110  docker build -t undrewb/node-intro .
+  111  docker run -p 49160:8080 -d undrewb/node-intro
+  112  curl http://localhost:49160
+  113  docker build -t undrewb/node-intro .
+  114  curl http://localhost:49160
+  115  docker run -p 49160:8080 -d undrewb/node-intro
+  116  docker ps
+  117  docker restart kind_neumann
+  118  curl http://localhost:49160
+  119  docker stop kind_neumann
+  120  curl http://localhost:49160
+  121  docker ps
+  122  docker run -p 49160:8080 -d undrewb/node-intro
+  123  curl http://localhost:49160
 
 pi@raspberrypi:~/projects

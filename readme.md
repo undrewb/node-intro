@@ -31,10 +31,31 @@
     - run the image with docker run
     - use docker ps to confirm its running
 
-References
+    docker build - create a docker image and put it in the local registry
+    docker start - run a docker image from the local image
+    docker ps - show the currently running containers
+    docker stop - stop a running container.
+    docker images - show the images in the local registry
+
+4. Update source code
+
+    - edit server.js 
+        res.send('Hello Hello\n');
+    - docker build -t undrewb/node-intro .
+    - docker ps
+    - docker stop <<name of container>>
+    - docker run -p 49160:8080 -d undrewb/node-intro
+    - curl http://localhost:49160
+
+
+
+
+References & Future work
 
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 https://nodesource.com/blog/8-protips-to-start-killing-it-when-dockerizing-node-js/
 
 https://stackoverflow.com/questions/38362533/docker-reload-a-nodejs-app-with-nodemon
+
+https://medium.com/lucjuggery/docker-in-development-with-nodemon-d500366e74df
