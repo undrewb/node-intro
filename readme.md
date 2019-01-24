@@ -49,7 +49,7 @@
         res.send('Hello Hello\n');
     - docker build -t undrewb/node-intro .
     - docker ps
-    - docker stop <<name of container>>
+    - docker stop name_of_container
     - docker run -p 49160:8080 -d undrewb/node-intro
     - curl http://localhost:49160
 
