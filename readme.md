@@ -25,17 +25,23 @@
     - create and populate Dockerfile
     - create and populate .dockerignore
     - build docker image
+        docker build -t undrewb/node-intro .
     - review docker images in local repository
+        docker images
+        docker ps
 
 3. Run the docker image
     - run the image with docker run
+        docker run -p 49160:8080 -d undrewb/node-intro
     - use docker ps to confirm its running
+        docker ps
 
-    docker build - create a docker image and put it in the local registry
-    docker start - run a docker image from the local image
-    docker ps - show the currently running containers
-    docker stop - stop a running container.
-    docker images - show the images in the local registry
+    Basic docker commands
+        docker build - create a docker image and put it in the local registry
+        docker start - run a docker image from the local image
+        docker ps - show the currently running containers
+        docker stop - stop a running container.
+        docker images - show the images in the local registry
 
 4. Update source code
 
@@ -49,8 +55,11 @@
 
 
 
-
-References & Future work
+## Troubleshooting
+    - reboot after installing docker so the docker daemon starts
+    - make sure youre in ~/projects/node-intro when you run the docker commands
+    
+## References & Future work
 
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
