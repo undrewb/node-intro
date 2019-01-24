@@ -25,5 +25,8 @@ Clone git repo
     less readme.md
 
 Install npm
+    -   download
+    -   extract
+    
 Install docker
 

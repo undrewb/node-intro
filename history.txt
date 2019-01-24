@@ -1,0 +1,95 @@
+    1  git
+    3  docker
+    4  npm
+    5  mkdir projects
+    6  ls
+    7  cd projects/
+    8  nano
+    9  gedit
+   10  emacs
+   11  git clone https://github.com/undrewb/node-intro.git
+   12  ls
+   13  cd node-intro/
+   14  ls
+   15  git git pull
+   16  git pull
+   17  ls
+   18  git pull
+   19  less pi-config.md 
+   20  less readme.md 
+   21  lynx
+   22  apt install lynx
+   23  sudo apt install lynx
+   24  sudo apt install pandoc
+   25  pandoc readme.md | lynx -stdin
+   26  wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+   27  curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
+   28  ls
+   29  code-oss
+   30  uname  -a
+   31  pwd
+   32  cd 
+   33  ls ~/Downloads/
+   34  cp ~/Downloads/node-v10.15.0-linux-armv7l.tar.xz .
+   35  ls
+   36  ls -al
+   37  chmod u+x node-v10.15.0-linux-armv7l.tar.xz 
+   38  tar
+   39  tar -xzf node-v10.15.0-linux-armv71.tar.xz
+   40  pwd
+   41  ls
+   42  ls -al
+   43  cd ~/Downloads/
+   44  ls
+   45  tar -xzf node-v10.15.0-linux-armv7l.tar.xz
+   46  wget https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-armv7l.tar.xz
+   47  rm node-v10.15.0-linux-armv7l.tar.xz
+   48  mv node-v10.15.0-linux-armv7l.tar.xz
+   49  mv node-v10.15.0-linux-armv7l.tar.xz.1 node-v10.15.0-linux-armv7l.tar.xz
+   50  ls
+   51  unzip no
+   52  sudo apt install bash-completion
+   53  ls
+   54  tar -xzf node-v10.15.0-linux-armv7l/
+   55  cd ~/Downloads/
+   56  ls
+   57  tar -xzfo node-v10.15.0-linux-armv7l.tar.xz 
+   58  mv node-v10.15.0-linux-armv7l.tar.xz node-v10.15.0-linux-armv7l.tar.gz
+   59  tar -xzf node-v10.15.0-linux-armv7l.tar.gz 
+   60  tar -xJf node-v10.15.0-linux-armv7l.tar.gz 
+   61  ls
+   62  tar -xf node-v10.15.0-linux-armv7l.tar.gz 
+   63  cd node-v10.15.0-linux-armv7l/
+   64  ls
+   65  sudo cp -R * /usr/local/
+   66  node -v
+   67  npm -v
+   68  cd ~/projects/
+   69  ls
+   70  cd node-intro/
+   71  history
+   72  git config --global user.email andrew.bucknell@gmail.com
+   73  git config --global user.name "Andrew Bucknell"
+   74  curl -sSL https://get.docker.com | sh
+   75  sudo usermod -aG docker pi
+   76  history
+   77  docker images
+   78  docker build -t undrewb/node-intro
+   79  docker build -t undrewb/node-intro .
+   80  sudo systemctl enable docker
+   81  sudo systemctl start docker
+   82  docker images
+   83  docker build -t undrewb/node-intro .
+reboot
+   85  cd projects/
+   86  ls
+   87  cd node-intro/
+   88  ls
+   89  docker build -t undrewb/node-intro .
+   90  docker images
+   91  docker start undrewb/node-intro
+   92  docker run -p 49160:8080 -d undrewb/node-intro
+   93  docker ps
+   94  history
+
+pi@raspberrypi:~/projects

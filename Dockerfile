@@ -2,7 +2,7 @@
 # we want to build from. Here we will use the latest LTS 
 # (long term support) version 8 of node available from the 
 # Docker Hub: https://hub.docker.com/
-FROM node:8
+FROM node:10
 
 # Create app directory
 WORKDIR /usr/src/app
