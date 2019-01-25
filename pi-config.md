@@ -41,3 +41,17 @@ Open terminal
     curl -sSL https://get.docker.com | sh
     sudo usermod -aG docker pi
     shutdown -r now
+
+### References
+- get started with git
+    https://projects.raspberrypi.org/en/projects/getting-started-with-git
+- get the project
+    git clone https://github.com/undrewb/node-intro.git
+- install vscode
+    https://pimylifeup.com/raspberry-pi-visual-studio-code/
+    https://code.visualstudio.com/docs
+- install node - note that we're using node 10 so adjust accordingly
+    https://www.instructables.com/id/Install-Nodejs-and-Npm-on-Raspberry-Pi/
+    and             https://askubuntu.com/questions/92328/how-do-i-uncompress-a-tarball-that-uses-xz
+- install docker 
+        https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/
