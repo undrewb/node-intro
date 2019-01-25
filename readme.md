@@ -20,42 +20,57 @@
     - create and populate server.js
     - what is eslint? why do we use it?
     - lets make sure it all works.
-    - run npm start and use your browser to go to http://0.0.0.0:8080/
+    - run the app
+    ```
+    npm start 
+    ```
+    and use your browser to go to http://0.0.0.0:8080/
 
 2. Create docker image
     - create and populate Dockerfile
     -  create and populate .dockerignore
     - build docker image
-            docker build -t undrewb/node-intro .
-    - review docker images in local repository
-        docker images
-        docker ps
+    ```
+    docker build -t undrewb/node-intro .
 
+    docker images
+    docker ps
 3. Run the docker image
-    - run the image with docker run
+    - run the image with docker run 
+    ```
         docker run -p 49160:8080 -d undrewb/node-intro
+    ```
     - use docker ps to confirm its running
+    ```
         docker ps
-
-    Basic docker commands
-        docker build - create a docker image and put it in the local registry
-        docker start - run a docker image from the local image
-        docker ps - show the currently running containers
-        docker stop - stop a running container.
-        docker images - show the images in the local registry
-
+    ```
+    - view output using curl or via you browser
+    ```
+    curl http://localhost:49160
+    ```
+    - Basic docker commands
+    ```
+        docker build 
+            create a docker image and put it in the local registry
+        docker start
+            run a docker image from the local image
+        docker ps
+            show the currently running containers
+        docker stop 
+            stop a running container.
+        docker images 
+            show the images in the local registry
 4. Update source code
 
     - edit server.js 
         res.send('Hello Hello\n');
-    - docker build -t undrewb/node-intro .
-    - docker ps
-    - docker stop name_of_container
-    - docker run -p 49160:8080 -d undrewb/node-intro
-    - curl http://localhost:49160
-
-
-
+    - build and restart the docker image
+    ```
+        docker build -t undrewb/node-intro .
+        docker ps
+        docker stop name_of_container
+        docker run -p 49160:8080 -d undrewb/node-intro
+        curl http://localhost:49160
 ## Troubleshooting
     - reboot after installing docker so the docker daemon starts
     - make sure youre in ~/projects/node-intro when you run the docker commands
