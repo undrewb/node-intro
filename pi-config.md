@@ -22,13 +22,13 @@ Open terminal
 ### Install visual studio code
 
     wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
-    curl -L https://code.headmelted.com/installers/apt.sh | sudo bash'
+    curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
 
 ### Install npm - armv7
 
     wget https://nodejs.org/dist/v10.15.0/node-v10.15.0-linux-armv7l.tar.xz
     ls
-    tar -xf node-v10.15.0-linux-armv7l.tar.gz 
+    tar -xf node-v10.15.0-linux-armv7l.tar.xz 
     cd node-v10.15.0-linux-armv7l/
     ls
     sudo cp -R * /usr/local/
@@ -42,6 +42,13 @@ Open terminal
     sudo usermod -aG docker pi
     shutdown -r now
 
+### Next
+When you've rebooted, open a terminal and cd into ~/projects/node-intro. Make sure docker is available. You're now ready to return to the readme.md so you can build and run your application.
+```
+    cd ~/projects/node-intro
+    docker ps
+    docker images
+```
 ### References
 - get started with git
     https://projects.raspberrypi.org/en/projects/getting-started-with-git

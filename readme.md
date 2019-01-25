@@ -28,11 +28,14 @@
 
 2. Create docker image
     - create and populate Dockerfile
-    -  create and populate .dockerignore
-    - build docker image
+    - create and populate .dockerignore
+    - Check the available images in your local registry. If you've just installed docker, there will be no local images yet.
+    ``` 
+    docker images
+    ```
+    - When you build the docker image it takes instructions from the Dockerfile. Of note is the FROM instruction which tells docker to download a node v10 ready image from the docker image registry. The first time you do this, it will take some time as the image must be downloaded from docker.com. Subsequent builds will be faster as the downloaded image is installed in the local image registry.
     ```
     docker build -t undrewb/node-intro .
-
     docker images
     docker ps
 3. Run the docker image
@@ -64,7 +67,7 @@
 
     - edit server.js 
         res.send('Hello Hello\n');
-    - build and restart the docker image
+    - Build and restart the docker image. Notice the build is much faster this time because the node v10 image is already downloaded.
     ```
         docker build -t undrewb/node-intro .
         docker ps
