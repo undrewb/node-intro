@@ -10,18 +10,25 @@
         4. You're cool with visual studio code. You're free to use any other editor if you prefer.
             -  https://code.visualstudio.com/docs
 
- 
+- note that you could run the following steps on any platform with node and docker.
 1. Create node app
+    - If you cloned the github project, the files are already available and you can just review them.
+    ```
+    cd ~/projects/node-intro
+    code-oss .
+    ```
     - create and populate package.json
-    - run npm install
-    - create and populate server.js
-    - what is eslint? why do we use it?
+    - run npm install from terminal to get dependencies specified in package.json
+    ```
+    npm install
+    ```
+    - create and populate server.js with some code. In package.json we specify server.js as the start point for running our program.
     - lets make sure it all works.
     - run the app
     ```
     npm start 
     ```
-        - view output using curl or via you browser http://localhost:8080
+    - view output using curl or via you browser http://localhost:8080
     ```
     curl http://localhost:8080
     ```
