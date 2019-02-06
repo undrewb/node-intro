@@ -1,10 +1,9 @@
-Install raspbian
+# Setting up your pi
 
-configure wifi
-
-configure keyboard layout english(US)
-
-Open terminal
+- Install raspbian
+- configure wifi
+- configure keyboard layout english(US)
+- open terminal
 
 ### Get started
 
