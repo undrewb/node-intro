@@ -1,16 +1,7 @@
-0. Setup the PI
-    - refer to pi-config.md for detailed steps
-    - these instructions assume 
-        1. you've got your pi running rasbian 
-            - https://www.raspberrypi.org/documentation/configuration/
-        2. you're familiar with basic unic unix commands
-            - https://www.raspberrypi.org/documentation/linux/usage/commands.md 
-        3. You're ready to use git
-            - https://projects.raspberrypi.org/en/projects/getting-started-with-git
-        4. You're cool with visual studio code. You're free to use any other editor if you prefer.
-            -  https://code.visualstudio.com/docs
 
 - note that you could run the following steps on any platform with node and docker.
+- for guidance on setting up a pi running rasbian to do this, please refer to pi-config.md
+
 1. Create node app
     - If you cloned the github project, the files are already available and you can just review them.
     ```
