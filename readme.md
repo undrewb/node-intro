@@ -1,7 +1,7 @@
 # Node and Docker
 
 - note that you could run the following steps on any platform with node and docker.
-- for guidance on setting up a pi running rasbian to do this, please refer to [a relative link](pi-config.md)
+- for guidance on setting up a pi running rasbian to do this, please refer to [pi-config.md](pi-config.md)
 
 1. create node app
     - create and populate package.json
