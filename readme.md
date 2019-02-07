@@ -39,6 +39,7 @@ Run visual studio code
 ## Create node app
 In visual studio code
 - create and populate package.json
+
 In terminal window
 - download node dependencies.
     ```
@@ -46,8 +47,8 @@ In terminal window
     ```
 In visual studio code     
 - create and populate server.js
-- lets make sure it all works.
-In terminal window
+
+Lets make sure it all works. In terminal window
 - start your application
     ```
     npm start 
@@ -75,7 +76,7 @@ In terminal window
     ```
     docker run -p 49160:8080 -d pilab/node-intro-img
     ```
-- use docker ps to confirm its running
+- confirm its running
     ```
     docker ps
     ```
