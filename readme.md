@@ -97,7 +97,7 @@ In visual studio code
 In terminal window
 - rebuild the container
     ```
-    docker build -t undrewb/node-intro .
+    docker build -t pilab/node-intro-img .
     ```
 - restart the container
     ```
