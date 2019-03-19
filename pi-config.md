@@ -9,6 +9,11 @@
 In your terminal window, download and install visual studio code 
 
     wget https://packagecloud.io/headmelted/codebuilds/gpgkey -O - | sudo apt-key add -
+    sudo apt install code-oss=1.29.0-1539702286
+    sudo apt-mark hold code-oss
+    
+The latest version is buggy so we're not currently using the handy dandy installer. refer https://github.com/headmelted/codebuilds/issues/67#issuecomment-466255567
+
     curl -L https://code.headmelted.com/installers/apt.sh | sudo bash
 
 ### Install npm - armv7
