@@ -86,6 +86,9 @@ In terminal window
         docker ps - show the currently running containers
         docker stop - stop a running container.
         docker images - show the images in the local registry
+        docker system prune - remove old container and images
+        docker image rm <image id> - remove image from registry
+        
 ## Update source code
 
 In visual studio code
