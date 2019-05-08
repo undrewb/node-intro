@@ -1,8 +1,11 @@
+# 
 # The first thing we need to do is define from what image 
 # we want to build from. Here we will use the latest LTS 
-# (long term support) version 8 of node available from the 
+# (long term support) version 10 of node available from the 
 # Docker Hub: https://hub.docker.com/
 FROM node:10
+
+MAINTAINER Andrew Bucknell andrew@bucknell.com.au
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -20,4 +23,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
+
 CMD [ "npm", "start" ]
